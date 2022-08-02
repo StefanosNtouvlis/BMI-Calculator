@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <title>BMI Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div class="fun-con">
+            <h2 class="text">Check your BMI.</h2>
+            <p id="iText" class="text">Enter your weight and height fo find out you BMI.</p>
+            
+            <form>
+                <div id="weightInput">
+                    <p>Weight(Kg):</p>
+                    <input id="weight" type="number" pattern="[0-9]*" name="weight">
+                </div>
+                <div id="heightInput">
+                    <p>Height(Cm):</p>
+                    <input id="height" type="number" pattern="[0-9]*" name="height">
+                </div>
+
+                <button type="button" class="btn" onclick="calculate()">Calculate BMI now!</button>
+            </form>
+            <div id="results" class="text">BMI results:</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
